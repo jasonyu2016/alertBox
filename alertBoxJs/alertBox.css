@@ -1,0 +1,55 @@
+.alert-box {
+	width: 6.2rem;
+	background: #fff;
+	position: fixed;
+	z-index: 99999;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #0e0e0e;
+	border: 1px #ddd solid;
+	border-radius: .1rem;
+}
+.alert-box .alert-box-title {
+	margin: .5rem 0 .4rem;
+	font-size: .34rem;
+}
+.alert-box .alert-box-con {
+	padding: 0 .56rem;
+	text-align: left;
+	font-size: .28rem;
+	line-height: .4rem;
+}
+.alert-box .alert-box-btn {
+	display: -webkit-box;
+	-webkit-display: flex;
+	-moz-display: flex;
+	-o-display: flex;
+	-ms-display: flex;
+	display: flex;
+	align-items: center;
+	height: 1rem;
+	margin-top: .5rem;
+}
+.alert-box .alert-box-btn button {
+	flex: 1;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: .28rem;
+	border-top: 1px #ddd solid;
+	height: 100%;
+	border-bottom: 0;
+	padding: 0;
+}
+.alert-box .alert-box-btn button.dosth {
+	color: #fc5c3d;
+}
+.alert-box .alert-box-btn button:nth-of-type(2n) {
+	border-left: 1px #ddd solid;
+}

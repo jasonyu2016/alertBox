@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>弹窗</title>
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+<!--标准mui.css-->
+<link rel="stylesheet" href="../dist/base.css">
+<link rel="stylesheet" href="alertBox.css">
+<script src="../dist/jquery.min.js"></script>
+<script src="../dist/rem.js"></script>
+<script src="alertBox.js"></script>
+<style>
+	.a1, .a2, .a3 {
+		width: 100%;
+		height: 1rem;
+		line-height: 1rem;
+		background: #fff;
+		margin-top: .2rem;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="a1">点击1</div>
+
+	<div class="a2">点击2</div>
+
+	<div class="a3">点击3</div>
+</body>
+</html>
+<script>
+	$(function(){
+		$(".a1").click(function(){
+			var aa = new Showalert("温馨提示1","哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈嗝",fn1,"去设置");
+			aa.closes();
+		})
+
+		$(".a2").click(function(){
+			var aa = new Showalert("提示2","啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊");
+			aa.closes();
+		})
+
+		$(".a3").click(function(){
+			var aa = new Showalert("提示3","提示内容提示内容提示内容提示内容",fn3,"去首页");
+			aa.closes();
+		})		
+
+		//需要在弹框中执行的方法
+		function fn1(){
+			alert(111111);
+		}
+
+		function fn2(){
+			alert(222222);
+		}
+
+		function fn3(){
+			alert(333333);
+		}
+	})
+</script>
